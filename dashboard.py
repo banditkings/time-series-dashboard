@@ -17,7 +17,11 @@ external_stylesheets = [
 app = Dash(__name__, external_stylesheets=external_stylesheets)
 app.css.config.serve_locally = True
 
-def forecast(df):
+def forecast(df)->pd.DataFrame:
+    """
+    Generate a time series forecast from the dataframe and return the forecast
+    as a dataframe with columns for the forecast and prediction intervals.
+    """
     model = ETSModel(df["#Passengers"],
                      error="add",
                      trend="add",
