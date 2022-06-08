@@ -9,6 +9,14 @@ A simple 1-page dashboard example using Dash & Python to create a user forecasti
 * [x] Ability to download forecast as CSV
 * [ ] Add styling and modularize
 
+## How to install
+
+Navigate to the directory and use pip install from the `requirements.txt` file.
+
+```bash
+pip install -r requirements.txt
+```
+
 ## How to run
 
 ```bash

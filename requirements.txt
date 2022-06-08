@@ -1,5 +1,7 @@
-plotly
-dash
-flask
-pandas
+plotly>5.0
+dash>=2.0
+flask>=2.0
+pandas>=1.4
 statsmodels
+sktime>=0.11
+numpy
