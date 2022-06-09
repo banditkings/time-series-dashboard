@@ -46,6 +46,14 @@ app.layout = html.Div([
 
         The data table below provides the forecast and prediction intervals, and allows the user to override the forecast and export the forecast to CSV.
     """),
+    # Control Panel
+    html.Div([
+        html.Span(["Model: "]),
+        html.Span([
+            dcc.Dropdown(options=['Exponential Smoothing', 'ETS', 'ARIMA'], value='Exponential Smoothing', id='model-select-dropdown'),
+        ]),
+        
+    ], id="model_selector"),
     # Line Chart with Historicals and Forecast
     dcc.Graph(id='editable-table-output'),
     # Editable DataTable where user can override the forecast

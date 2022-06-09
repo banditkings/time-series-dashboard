@@ -1,5 +1,5 @@
 plotly>5.0
-dash>=2.0
+dash>=2.5
 flask>=2.0
 pandas>=1.4
 statsmodels
