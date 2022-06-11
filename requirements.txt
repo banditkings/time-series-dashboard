@@ -5,3 +5,4 @@ pandas>=1.4
 statsmodels
 sktime>=0.11
 numpy
+gunicorn
