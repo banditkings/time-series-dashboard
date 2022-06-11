@@ -15,6 +15,7 @@ external_stylesheets = [
 ]
 
 app = Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 app.css.config.serve_locally = True
 
 def forecast(df)->pd.DataFrame:
