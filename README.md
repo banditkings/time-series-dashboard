@@ -26,3 +26,10 @@ python dashboard.py
 ## Screenshot
 
 ![img](docs/screenshot.png)
+
+## Deployment
+
+* [x] added Procfile to use gunicorn and added `server=app.server` in `dashboard.py`
+  * [x] Procfile fixed to say `gunicorn dashboard:server` to point correctly to `dashboard.py` and the `server` variable
+* [x] added runtime.txt to pick the right Python buildpack on Heroku
+* [x] example up on Herokup at: https://dash-timeseries-card.herokuapp.com
